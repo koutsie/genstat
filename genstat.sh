@@ -16,6 +16,9 @@ vnStat=$(vnstat)
 DiskUsage=$(df)
 Date=$(date)
 
+
+# Notice: 
+# LM-SENSORS wont of course work on MacOS, im fixing this issue in v0.2 Disasterous Themes wich is supposed to be released in a few weeks.
 #############K##############O##############U#######T##########S####I#####E#####
 cat >/tmp/tmpstat 2>&1 << EOF
 <!DOCTYPE html>
