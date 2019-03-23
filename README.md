@@ -4,7 +4,7 @@
 A rough script to make a almost presentable system showcase and host it. </br>
 Example: https://0x0.st/zKil.html
 
-Depencies: ```neofetch, vnstat, lm-sensors, curl & sed```</br>
+Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed```</br>
 
 ## debian
 - `sudo apt install neofetch vnstat lm-sensors curl`
