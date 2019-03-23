@@ -1,6 +1,6 @@
-### You Must Install Debian GNU/Linux, Licence - v0.3
+### You Must Install Debian GNU/Linux, Licence
 To redistribute this software (modified or unmodified) the User must comply with the following tasks:
-- Always comply with the LATEST VERSION (latest version being: https://github.com/koutsie/genstat/blob/master/licence.md) of The Licence.
+- Always comply with the LATEST VERSION (latest version being: https://github.com/koutsie/ymid) of The Licence.
 - Install*** the latest version of Debian GNU/Linux* possible (Either SID, Testing or Stable).
 - You must provide proof of having This Install of Debian, if so requested by Koutsie(<koutsie(at)disroot.org>)
 
