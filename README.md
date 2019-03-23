@@ -15,5 +15,5 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl```</br>
 *coming soon.... inb4 repo inactive for months*
 
 #### send me money for my bad work
-<img src="http://img.shields.io/liberapay/receives/koutsie.svg?logo=liberapay">
+<a href="https://liberapay.com/koutsie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
