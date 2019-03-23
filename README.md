@@ -8,5 +8,5 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl```</br>
 
 ## simple debian guide
 - `sudo apt install neofetch vnstat lm-sensors curl`
-- `wget https://githubbbbbb.kek/blah.sh`
+- `wget https://github.com/koutsie/genstat/raw/master/genstat.sh`
 - `chmod +x genstat.sh && ./genstat.sh`
