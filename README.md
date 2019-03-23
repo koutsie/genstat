@@ -16,6 +16,11 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl```</br>
 - `wget https://github.com/koutsie/genstat/raw/master/genstat.sh`
 - `chmod +x genstat.sh && ./genstat.sh`
 
+## arch
+- `sudo pacman -S curl neofetch vnstat lm_sensors sed`
+- `wget https://github.com/koutsie/genstat/raw/master/genstat.sh`
+- `chmod +x genstat.sh && ./genstat.sh`
+
 ## android
 - `pkg install neofetch curl wget`
 - `wget https://github.com/koutsie/genstat/raw/master/genstat.sh`
