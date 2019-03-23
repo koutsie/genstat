@@ -19,6 +19,6 @@ For the persons listed above, in this case Partly means:
 - Not having to proof to Koutsie** they have an legitmate installation of Debian.
 
 <pre>
-* https://www.debian.org/
+* Debian, in this case being the Operating System (hosted in https://www.debian.org/)
 ** Koutsie, the owner of This repository and The Software (koutsie(at)disroot.org)
 </pre>
