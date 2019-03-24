@@ -10,15 +10,11 @@ SysRamFree=$(( $(cat /proc/meminfo | grep MemFree | awk '{ print $2 }') / 1024 )
 SysRamUsed=$(expr $SysRam - $SysRamFree)
 SysCpuUsage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}')
 SysTemp=$(sensors | grep °C | tr -d '+')
-# Lo and behold: the craziest, most useless script cleaner, ever!
 TopStat=$(neofetch --stdoutt')
 vnStat=$(vnstat)
 DiskUsage=$(df)
 Date=$(date)
 
-
-# Notice: 
-# LM-SENSORS wont of course work on MacOS, im fixing this issue in v0.2 Disasterous Themes wich is supposed to be released in a few weeks.
 #############K##############O##############U#######T##########S####I#####E#####
 cat >/tmp/tmpstat 2>&1 << EOF
 <!DOCTYPE html>
