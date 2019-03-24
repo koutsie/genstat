@@ -4,7 +4,7 @@
 A rough script to make a almost presentable system showcase and host it. </br>
 Example: https://0x0.st/zKil.html
 
-Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed```</br>
+Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & cut```</br>
 
 ## debian
 - `sudo apt install neofetch vnstat lm-sensors curl`
@@ -27,5 +27,8 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed```</br>
 - `chmod +x genstat.sh && ./genstat.sh`
 
 ### options
-*coming soon.... inb4 repo inactive for months*
+- coming soon:
+- something to make it work on OSX
+- added options to disable stuff
+- added options to write to stdout
 
