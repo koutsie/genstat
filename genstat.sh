@@ -1,11 +1,9 @@
 #!/bin/bash
-#Depencies:  curl, neofetch, vnstat, lm-sensors, sed, and python for the experimental features
-echo -e "import sys\nx = sys.argv[1]\nprint(x[6:-1])" > /tmp/py.py
+#Depencies:  curl, neofetch, vnstat, lm-sensors, sed, and cut
 SysUptime=$(uptime -p)
-#SysDistro=$(lsb_release -ds 2>/dev/null || cat /etc/*release 2>/dev/null | head -n1 || uname -om)
-SysDistro=$(python /tmp/py.py "$(cat /etc/*release | head -n1)")
+SysDistro=$(cat /etc/*release | head -n1 | cut -d \" -f2)
 SysUser=$(whoami)
-SysBattery=$(upower -d | grep percentage | awk '{print $2;}' | head -1)
+SysBattery=$(upower -d | grep percentage | awk '{print $2}' | head -1)
 SysRam=$(vmstat -s -S M | grep ' memory' | awk '{print $1}' | head -n1)
 SysRamFree=$(vmstat -s -S M | grep 'used' | awk '{print $1}' | head -n1)
 SysRamUsed=$(expr $SysRam - $SysRamFree)
