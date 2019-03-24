@@ -1,4 +1,4 @@
-### You Must Install Debian GNU/Linux, Licence
+### You Must Install Debian GNU/Linux Public Licence
 To redistribute this software (modified or unmodified) the User must comply with the following tasks:
 - Always comply with the LATEST VERSION (latest version being: https://github.com/koutsie/ymid) of The Licence.
 - Install*** the latest version of Debian GNU/Linux* possible (Either SID, Testing or Stable).
@@ -16,7 +16,7 @@ Koutsie(koutsie(at)disroot.org) has given the following persons the right to not
 - @twodotfac#4211 
 
 For the persons listed above, in this case Partly means:
-- Not having to proof to Koutsie** they have an legitmate installation of Debian.
+- Not having to prove to Koutsie** they have an legitmate installation of Debian.
 
 <pre>
 * Debian GNU/Linux, in this case being the Operating System (hosted in https://www.debian.org/)
