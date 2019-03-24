@@ -1,25 +1,24 @@
 #!/bin/bash
-# Depencies:  curl, neofetch, vnstat, lm-sensors, sed. (and maybe even wkhtmltoimage)
-
+#Depencies:  curl, neofetch, vnstat, lm-sensors, sed, and python for the experimental features
+echo -e "import sys\nx = sys.argv[1]\nprint(x[6:-1])" > /tmp/py.py
 SysUptime=$(uptime -p)
-SysDistro=$(lsb_release -ds 2>/dev/null || cat /etc/*release 2>/dev/null | head -n1 || uname -om)
+#SysDistro=$(lsb_release -ds 2>/dev/null || cat /etc/*release 2>/dev/null | head -n1 || uname -om)
+SysDistro=$(python /tmp/py.py "$(cat /etc/*release | head -n1)")
 SysUser=$(whoami)
 SysBattery=$(upower -d | grep percentage | awk '{print $2;}' | head -1)
-SysRam=$(( $(cat /proc/meminfo | grep MemTotal | awk '{ print $2 }') / 1024 ))
-SysRamFree=$(( $(cat /proc/meminfo | grep MemFree | awk '{ print $2 }') / 1024 ))
+SysRam=$(vmstat -s -S M | grep ' memory' | awk '{print $1}' | head -n1)
+SysRamFree=$(vmstat -s -S M | grep 'used' | awk '{print $1}' | head -n1)
 SysRamUsed=$(expr $SysRam - $SysRamFree)
 SysCpuUsage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}')
 SysTemp=$(sensors | grep °C | tr -d '+')
-# Lo and behold: the craziest, most useless script cleaner, ever!
-TopStat=$(neofetch --off| perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b | tr '\r' '\0' | sed 's/ \x0//g')
+TopStat=$(neofetch --stdout)
 vnStat=$(vnstat)
 DiskUsage=$(df)
 Date=$(date)
 
 
 # Notice: 
-# LM-SENSORS wont of course work on MacOS, im fixing this issue in v0.2 Disasterous Themes wich is supposed to be released in a few weeks.
-#############K##############O##############U#######T##########S####I#####E#####
+# sensors dont work on macos, ill put in an os detect thing
 cat >/tmp/tmpstat 2>&1 << EOF
 <!DOCTYPE html>
 <html>
@@ -101,7 +100,8 @@ $DiskUsage
 EOF
 
 cat /tmp/tmpstat > genstat.html
-echo "Uploading to 0x0.st..." & curl -F'file=@genstat.html' https://0x0.st
+echo "Uploading to 0x0.st..." & curl -F'file=@ngenstat.html' https://0x0.st
 
 # wkhtmltoimage genstat.html genstat.png
-# Koutsie was here <3
+# ndt, 2019
+# this licence is stupid but i am partially exempt so i cant really complain
