@@ -1,5 +1,5 @@
-<img src="https://github.com/koutsie/genstat/raw/master/Genstat.png"></br>
-# genstat
+<img src="https://github.com/twodotcs/genstat/raw/master/nice.png"></br>
+# genstat, ndt's fork with added features
 
 A rough script to make a almost presentable system showcase and host it. </br>
 Example: https://0x0.st/zKil.html
@@ -28,7 +28,4 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed```</br>
 
 ### options
 *coming soon.... inb4 repo inactive for months*
-
-#### send me money for my bad work
-<a href="https://liberapay.com/koutsie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
