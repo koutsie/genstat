@@ -11,7 +11,7 @@ SysRamUsed=$(expr $SysRam - $SysRamFree)
 SysCpuUsage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}')
 SysTemp=$(sensors | grep °C | tr -d '+')
 # Lo and behold: the craziest, most useless script cleaner, ever!
-TopStat=$(neofetch --off| perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b | tr '\r' '\0' | sed 's/ \x0//g')
+TopStat=$(neofetch --stdoutt')
 vnStat=$(vnstat)
 DiskUsage=$(df)
 Date=$(date)
