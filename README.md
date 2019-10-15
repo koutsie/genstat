@@ -27,8 +27,6 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed```</br>
 - `chmod +x genstat.sh && ./genstat.sh`
 
 ### options
-*coming soon.... inb4 repo inactive for months*
+*coming soon.... inb4 repo inactive for months*  - *this happend, fuck (15, lokakuuta 2019)
 
-#### send me money for my bad work
-<a href="https://liberapay.com/koutsie/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
