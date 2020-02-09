@@ -6,7 +6,7 @@ SysDistro=$(lsb_release -ds 2>/dev/null || cat /etc/*release 2>/dev/null | head 
 SysUser=$(whoami)
 SysBattery=$(upower -d | grep percentage | awk '{print $2;}' | head -1)
 SysRam=$(( $(cat /proc/meminfo | grep MemTotal | awk '{ print $2 }') / 1024 ))
-SysRamFree=$(( $(cat /proc/meminfo | grep MemFree | awk '{ print $2 }') / 1024 ))
+SysRamFree=$(( $(cat /proc/meminfo | grep MemAvailable | awk '{ print $2 }') / 1024 ))
 SysRamUsed=$(expr $SysRam - $SysRamFree)
 SysCpuUsage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}')
 SysTemp=$(sensors | grep °C | tr -d '+')
