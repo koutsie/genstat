@@ -1,5 +1,6 @@
-<img src="https://github.com/koutsie/genstat/raw/master/Genstat.png"></br>
+<img src="https://github.com/koutsie/genstat/raw/master/Genstat.png" width="100" height="100">
 <br>
+
 ![Genstat](https://github.com/koutsie/genstat/raw/master/genstat.png)
 
 # genstat
@@ -28,8 +29,6 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed```</br>
 - `pkg install neofetch curl wget`
 - `wget https://github.com/koutsie/genstat/raw/master/genstat.sh`
 - `chmod +x genstat.sh && ./genstat.sh`
-
-### options
-*coming soon.... inb4 repo inactive for months*  - *this happend, fuck (15, lokakuuta 2019)
+*Note: android doesnt do xdg-open so uhh, i need to figure out an way sometime when i get to it*
 
 
