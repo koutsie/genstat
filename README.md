@@ -1,4 +1,6 @@
-<img src="https://github.com/koutsie/genstat/raw/master/Genstat.png" width="100" height="100">
+<p align="center">
+  <img src="https://github.com/koutsie/genstat/raw/master/Genstat.png" width="100" height="100">
+</p>
 <br>
 
 ![Genstat](https://github.com/koutsie/genstat/raw/master/genstat.png)
