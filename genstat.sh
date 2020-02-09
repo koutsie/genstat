@@ -97,7 +97,7 @@ $DiskUsage
 EOF
 
 cat /tmp/tmpstat > genstat.html
-echo "Uploading to 0x0.st..." & curl -F 'file=@genstat.html' https://0x0.st
+xdg-open genstat.html
 
 # wkhtmltoimage genstat.html genstat.png
 # Koutsie was here <3
