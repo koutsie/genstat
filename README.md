@@ -1,4 +1,7 @@
 <img src="https://github.com/koutsie/genstat/raw/master/Genstat.png"></br>
+<br>
+![Genstat](https://github.com/koutsie/genstat/raw/master/genstat.png)
+
 # genstat
 
 A rough script to make a almost presentable system showcase and host it. </br>
