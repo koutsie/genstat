@@ -1,23 +1,22 @@
+<!DOCTYPE html>
+<head>
+<link rel="shortcut icon" type="image/png" href="https://idiotic.me/genstat/Genstat.png"/>
+<meta charset="UTF-8">
+</head>
+
 <p align="center">
   <img src="https://github.com/koutsie/genstat/raw/master/Genstat.png" width="100" height="100">
 </p>
 
-<br>
-
 ![Genstat](https://github.com/koutsie/genstat/raw/master/genstat.png)
+
 
 # genstat
 
-A rough script to make a almost presentable system showcase and host it. 
-
-
-</br>
+<p>A rough script to make a almost presentable system showcase and host it. </p>
 
 
 Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed``` 
-
-
-</br>
 
 
 ## debian
@@ -40,8 +39,7 @@ Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed```
 - `wget https://github.com/koutsie/genstat/raw/master/genstat.sh`
 - `chmod +x genstat.sh && ./genstat.sh`
 
-<br>
-
-*Note: android doesnt do xdg-open so uhh, i need to figure out an way sometime when i get to it*
-
+<p>
+*Note: android doesnt do xdg-open so uhh, i need to figure out an way sometime when i get to it
+</p>
 
