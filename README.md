@@ -8,8 +8,17 @@
 
 # genstat
 
-A rough script to make a almost presentable system showcase and host it. </br>
-Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed``` </br>
+A rough script to make a almost presentable system showcase and host it. 
+
+
+</br>
+
+
+Depencies: ```neofetch, vnstat, lm-sensors, curl, perl, awk & sed``` 
+
+
+</br>
+
 
 ## debian
 - `sudo apt install neofetch vnstat lm-sensors curl`
