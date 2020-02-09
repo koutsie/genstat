@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>
 <link rel="shortcut icon" type="image/png" href="https://idiotic.me/genstat/Genstat.png"/>
 <meta charset="UTF-8">
